@@ -69,8 +69,8 @@
                         <input class="form-control" type="text" id="txtnome" name="txtnome" required>
                     </div>
                     <div class="col-sm-12">
-                        <label class="form-label" for="txthora">Hora de Abertura OMM:</label>
-                        <input class="form-control" type="time" id="txthora" name="txthora" required>
+                        <label class="form-label" for="dataAbertura">Data/Hora de Abertura OMM:</label>
+                        <input class="form-control" type="datetime-local" id="dataAbertura" name="dataAbertura" required>
                     </div>
                     <div class="col-sm-12">
                         <label class="form-label" for="txtNumVeic">Nº Veiculo/Placa/Maquina:</label>
@@ -82,7 +82,7 @@
                     </div>
                     <div class="col-sm-12">
                         <label class="form-label" for="txtreclama">Descrição do Problema:</label>
-                        <textarea id="txtreclama" name="txtreclama" cols="30" rows="5"></textarea>
+                        <textarea id="txtreclama" name="txtreclama" cols="40" rows="5"></textarea>
                     </div>
                 </div>
                 <!-- FIM Detalhes Problemas -->
@@ -113,6 +113,14 @@
                                 </div>
                             </tr>
                         </table>
+                    </div>
+                    <div class="col-sm-12 text-center">
+                        <label class="form-label" for="dataTermino">Data/Hora de Término OMM:</label>
+                        <input class="form-control" type="datetime-local" id="dataTermino" name="dataTermino" required>
+                    </div>
+                    <div class="col-sm-12 text-center">
+                        <label class="form-label" for="txtrespon">Responsável:</label>
+                        <input class="form-control" type="text" id="txtrespon" name="txtrespon" required>
                     </div>
                 </div>
                 <!-- FIM Tarefa Executada -->
