@@ -9,6 +9,7 @@
     <title>Formulário OMM</title>
 </head>
 <body>
+    <!-- header -->
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center mt-5">
@@ -20,27 +21,53 @@
                 <h1><b>Ordem de Manutenção</b></h1>
             </div>
         </div>
+        <!-- FIM header -->
+        <!-- Formulario -->
         <div class="row">
-            <div class="col-sm-2">
-                <input class="form-check-inline" type="checkbox" name="ckCorretiva" id="ckCorretiva" value="corretiva_OK">
-                <label class="form-label" for="ckCorretiva">Corretiva</label>    
-
-                <input class="form-check-inline" type="checkbox" name="ckSocorro" id="ckSocorro" value="socorro_OK">
-                <label class="form-label" for="ckSocorro">Socorro</label>    
-
-                <input class="form-check-inline" type="checkbox" name="ckGarantia" id="ckGarantia" value="garantia_OK">
-                <label class="form-label" for="ckGarantia">Garantia</label>    
-                
-                <input class="form-check-inline" type="checkbox" name="ckCorretiva" id="ckCorretiva" value="corretiva_OK">
-                <label class="form-label" for="ckCorretiva">Corretiva</label>    
-
-                <input class="form-check-inline" type="checkbox" name="ckSocorro" id="ckSocorro" value="socorro_OK">
-                <label class="form-label" for="ckSocorro">Socorro</label>    
-
-                <input class="form-check-inline" type="checkbox" name="ckGarantia" id="ckGarantia" value="garantia_OK">
-                <label class="form-label" for="ckGarantia">Garantia</label>    
+            <div class="card text-center">
+                <!-- Check Boxes -->
+                <div class="col-md-2">
+                    <div class="teste1">
+                        <input class="form-check-inline" type="checkbox" name="ckCorretiva" id="ckCorretiva" value="corretiva_OK">
+                        <label class="form-label" for="ckCorretiva">Corretiva</label>    
+                    </div>
+                    <div class="teste1">
+                        <input class="form-check-inline" type="checkbox" name="ckSocorro" id="ckSocorro" value="socorro_OK">
+                        <label class="form-label" for="ckSocorro">Socorro</label>    
+                    </div>
+                    <div class="teste1">
+                        <input class="form-check-inline" type="checkbox" name="ckGarantia" id="ckGarantia" value="garantia_OK">
+                        <label class="form-label" for="ckGarantia">Garantia</label>    
+                    </div>
+                    <div class="teste1">
+                        <input class="form-check-inline" type="checkbox" name="ckCorre_Prog" id="ckCorre_Prog" value="corre_prog_OK">
+                        <label class="form-label" for="ckCorre_Prog">Corretiva Programada</label>
+                    </div>    
+                    <div class="teste1">
+                        <input class="form-check-inline" type="checkbox" name="ckReforma_acidente" id="ckReforma_acidente" value="reforma_acidente_OK">
+                        <label class="form-label" for="ckReforma_acidente">Reforma de Acidente</label>
+                    </div>    
+                    <div class="teste1">
+                        <input class="form-check-inline" type="checkbox" name="ckreform_melho" id="ckreform_melho" value="reform_melho_OK">
+                        <label class="form-label" for="ckreform_melho">Reforma Melhoria</label>
+                    </div>   
+                </div> 
+                <!-- FIM Check Boxes -->
             </div>
         </div>
+        <div class="row text-center">
+            <div class="card">
+                <div class="col-sm-12">
+                    <label class="form-label" for="txtNumVeic">Nº Veiculo/Placa/Maquina:</label>
+                    <input class="form-control" type="text">
+                </div>
+                <div class="col-sm-12">
+                    <label class="form-label" for="txtNumVeic">Hora de Abertura OMM:</label>
+                    <input class="form-control" type="time">
+                </div>
+            </div>
+        </div>
+        <!-- FIM Formulario -->
     </div>
 </body>
 </html>
