@@ -23,59 +23,101 @@
         </div>
         <!-- FIM header -->
         <!-- Formulario -->
-        <div class="row">
-            <div class="card text-center">
+        <form action="">
+            <div class="row">
                 <!-- Check Boxes -->
-                <div class="col-md-2">
-                    <div class="teste1">
-                        <input class="form-check-inline" type="checkbox" name="ckCorretiva" id="ckCorretiva" value="corretiva_OK">
-                        <label class="form-label" for="ckCorretiva">Corretiva</label>    
-                    </div>
-                    <div class="teste1">
-                        <input class="form-check-inline" type="checkbox" name="ckSocorro" id="ckSocorro" value="socorro_OK">
-                        <label class="form-label" for="ckSocorro">Socorro</label>    
-                    </div>
-                    <div class="teste1">
-                        <input class="form-check-inline" type="checkbox" name="ckGarantia" id="ckGarantia" value="garantia_OK">
-                        <label class="form-label" for="ckGarantia">Garantia</label>    
-                    </div>
-                    <div class="teste1">
-                        <input class="form-check-inline" type="checkbox" name="ckCorre_Prog" id="ckCorre_Prog" value="corre_prog_OK">
-                        <label class="form-label" for="ckCorre_Prog">Corretiva Programada</label>
-                    </div>    
-                    <div class="teste1">
-                        <input class="form-check-inline" type="checkbox" name="ckReforma_acidente" id="ckReforma_acidente" value="reforma_acidente_OK">
-                        <label class="form-label" for="ckReforma_acidente">Reforma de Acidente</label>
-                    </div>    
-                    <div class="teste1">
-                        <input class="form-check-inline" type="checkbox" name="ckreform_melho" id="ckreform_melho" value="reform_melho_OK">
-                        <label class="form-label" for="ckreform_melho">Reforma Melhoria</label>
-                    </div>   
-                </div> 
+                <div class="card">
+                    <div class="col-md-12">
+                        <table class="table align-middle">  
+                            <tr>
+                                <div class="">
+                                    <td><label class="form-label" for="ckSocorro">Socorro</label>  </td>
+                                    <td><input class="form-check-inline" type="checkbox" name="ckSocorro" id="ckSocorro" value="socorro_OK"></td>
+
+                                    <td><label class="form-label" for="ckGarantia">Garantia</label> </td>
+                                    <td><input class="form-check-inline" type="checkbox" name="ckGarantia" id="ckGarantia" value="garantia_OK"></td>
+                                </div>
+                            </tr>
+                            <tr>
+                                <div class="">
+                                    <td><label class="form-label" for="ckCorretiva">Corretiva</label>  </td>
+                                    <td><input class="form-check-inline" type="checkbox" name="ckCorretiva" id="ckCorretiva" value="corretiva_OK"></td>
+                                    
+                                    <td><label class="form-label" for="ckCorre_Prog">Corretiva Programada</label> </td>
+                                    <td><input class="form-check-inline" type="checkbox" name="ckCorre_Prog" id="ckCorre_Prog" value="corre_prog_OK"></td>
+                                </div>
+                            </tr>
+                            <tr>
+                                <div class="">
+                                    <td><label class="form-label" for="ckReforma_acidente">Reforma de Acidente</label>    </td>
+                                    <td><input class="form-check-inline" type="checkbox" name="ckReforma_acidente" id="ckReforma_acidente" value="reforma_acidente_OK"></td>
+
+                                    <td><label class="form-label" for="ckreform_melho">Reforma Melhoria</label>   </td>
+                                    <td><input class="form-check-inline" type="checkbox" name="ckreform_melho" id="ckreform_melho" value="reform_melho_OK"></td>
+                                </div>
+                            </tr>
+                        </table>
+                    </div> 
+                </div>
                 <!-- FIM Check Boxes -->
             </div>
-        </div>
-        <div class="row text-center">
-            <div class="card">
-                <div class="col-sm-12">
-                    <label class="form-label" for="txtnome">Nome do Condutor:</label>
-                    <input class="form-control" type="text" id="txtnome" name="txtnome">
+            <div class="row text-center">
+                <!-- Detalhes Problemas -->
+                <div class="card">
+                    <div class="col-sm-12">
+                        <label class="form-label" for="txtnome">Nome do Condutor:</label>
+                        <input class="form-control" type="text" id="txtnome" name="txtnome" required>
+                    </div>
+                    <div class="col-sm-12">
+                        <label class="form-label" for="txthora">Hora de Abertura OMM:</label>
+                        <input class="form-control" type="time" id="txthora" name="txthora" required>
+                    </div>
+                    <div class="col-sm-12">
+                        <label class="form-label" for="txtNumVeic">Nº Veiculo/Placa/Maquina:</label>
+                        <input class="form-control" type="text" id="txtNumVeic" name="txtNumVeic" required>
+                    </div>
+                    <div class="col-sm-12">
+                        <label class="form-label" for="txtNumVeic">Kilometragem/Horímetro:</label>
+                        <input class="form-control" type="number" required>
+                    </div>
+                    <div class="col-sm-12">
+                        <label class="form-label" for="txtreclama">Descrição do Problema:</label>
+                        <textarea id="txtreclama" name="txtreclama" cols="50" rows="5"></textarea>
+                    </div>
                 </div>
-                <div class="col-sm-12">
-                    <label class="form-label" for="txthora">Hora de Abertura OMM:</label>
-                    <input class="form-control" type="time" id="txthora" name="txthora">
-                </div>
-                <div class="col-sm-12">
-                    <label class="form-label" for="txtNumVeic">Nº Veiculo/Placa/Maquina:</label>
-                    <input class="form-control" type="text" id="txtNumVeic" name="txtNumVeic">
-                </div>
-
-                <div class="col-sm-12">
-                    <label class="form-label" for="txtNumVeic">Kilometragem/Horímetro:</label>
-                    <input class="form-control" type="number">
-                </div>
+                <!-- FIM Detalhes Problemas -->
             </div>
-        </div>
+
+            <div class="row">
+                <!-- Tarefa Executada -->
+                <div class="card">
+                    <h3>Tarefa Executada</h3>
+                    <div class="col-sm-12">
+                        <table class="table align-middle">
+                            <tr>
+                                <div class="mx-4">
+                                    <td><label for="ckMeca">Mecânico</label></td>
+                                    <td><input type="checkbox" name="ckMeca" id="ckMeca"></td>
+                                    
+                                    <td><label for="">Eletricista</label></td>
+                                    <td><input type="checkbox" name="" id=""></td>
+                                </div>
+                            </tr>
+                            <tr>
+                                <div class="ms-2">
+                                    <td><label for="">Soldador</label></td>
+                                    <td><input type="checkbox" name="" id=""></td>
+
+                                    <td><label for="">Lubrificador</label></td>
+                                    <td><input type="checkbox" name="" id=""></td>
+                                </div>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!-- FIM Tarefa Executada -->
+            </div>
+        </form>
         <!-- FIM Formulario -->
     </div>
 </body>
