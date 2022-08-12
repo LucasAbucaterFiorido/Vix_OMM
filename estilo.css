@@ -1,17 +1,18 @@
-.teste
+*
 {
     margin: 0px;
     padding: 0px;
-    
-}
-.teste1
-{
-    float: left;
-    margin-left: 2px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .config_posicionamento_btt
 {
     height: 80px;
+}
+.config_btt
+{
+    height: 50px;
+    width: 100px;
+    font-size: 19px;
 }
 .sombras_
 {
