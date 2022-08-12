@@ -14,7 +14,7 @@
     width: 100px;
     font-size: 19px;
 }
-.sombras_
+.sombras_form_om
 {
     box-shadow:
     0px 3.1px 14.6px rgba(0, 0, 0, -0.014),
@@ -26,6 +26,19 @@
     0px 11.7px 133.9px rgba(0, 0, 0, 0.296),
     0px 14px 185px rgba(0, 0, 0, 0.5)
   ;
-
 }
+
+.sombras_retorno
+{
+    box-shadow:
+    0.8px 0.7px 1.9px rgba(0, 0, 0, 0.054),
+    1.9px 1.6px 4.3px rgba(0, 0, 0, 0.084),
+    3.5px 2.9px 7.7px rgba(0, 0, 0, 0.108),
+    5.8px 4.8px 12.8px rgba(0, 0, 0, 0.129),
+    9.5px 7.9px 21.2px rgba(0, 0, 0, 0.147),
+    16.6px 13.9px 37px rgba(0, 0, 0, 0.164),
+    36px 30px 80px rgba(0, 0, 0, 0.18)
+  
+}
+
 
