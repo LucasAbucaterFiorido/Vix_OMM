@@ -9,3 +9,22 @@
     float: left;
     margin-left: 2px;
 }
+.config_posicionamento_btt
+{
+    height: 80px;
+}
+.sombras_
+{
+    box-shadow:
+    0px 3.1px 14.6px rgba(0, 0, 0, -0.014),
+    0px 4.4px 28.6px rgba(0, 0, 0, -0.016),
+    0px 5.6px 42.4px rgba(0, 0, 0, -0.005),
+    0px 6.9px 57.2px rgba(0, 0, 0, 0.024),
+    0px 8.2px 74.9px rgba(0, 0, 0, 0.075),
+    0px 9.8px 98.9px rgba(0, 0, 0, 0.159),
+    0px 11.7px 133.9px rgba(0, 0, 0, 0.296),
+    0px 14px 185px rgba(0, 0, 0, 0.5)
+  ;
+
+}
+
