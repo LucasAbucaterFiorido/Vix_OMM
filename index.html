@@ -36,28 +36,28 @@
                                 <tr>
                                     <div class="">
                                         <td><label class="form-label" for="ckSocorro">Socorro</label>  </td>
-                                        <td><input class="form-check-inline" type="checkbox" name="ckSocorro" id="ckSocorro" value="socorro_OK"></td>
+                                        <td><input class="form-check-inline" type="checkbox" name="ckSocorro" id="ckSocorro" value="Socorro = OK"></td>
 
                                         <td><label class="form-label" for="ckGarantia">Garantia</label> </td>
-                                        <td><input class="form-check-inline" type="checkbox" name="ckGarantia" id="ckGarantia" value="garantia_OK"></td>
+                                        <td><input class="form-check-inline" type="checkbox" name="ckGarantia" id="ckGarantia" value="Garantia = OK"></td>
                                     </div>
                                 </tr>
                                 <tr>
                                     <div class="">
                                         <td><label class="form-label" for="ckCorretiva">Corretiva</label>  </td>
-                                        <td><input class="form-check-inline" type="checkbox" name="ckCorretiva" id="ckCorretiva" value="corretiva_OK"></td>
+                                        <td><input class="form-check-inline" type="checkbox" name="ckCorretiva" id="ckCorretiva" value="Corretiva = OK"></td>
                                         
                                         <td><label class="form-label" for="ckCorre_Prog">Corretiva Programada</label> </td>
-                                        <td><input class="form-check-inline" type="checkbox" name="ckCorre_Prog" id="ckCorre_Prog" value="corre_prog_OK"></td>
+                                        <td><input class="form-check-inline" type="checkbox" name="ckCorre_Prog" id="ckCorre_Prog" value="Corretiva_Programada = OK"></td>
                                     </div>
                                 </tr>
                                 <tr>
                                     <div class="">
                                         <td><label class="form-label" for="ckReforma_acidente">Reforma de Acidente</label>    </td>
-                                        <td><input class="form-check-inline" type="checkbox" name="ckReforma_acidente" id="ckReforma_acidente" value="reforma_acidente_OK"></td>
+                                        <td><input class="form-check-inline" type="checkbox" name="ckReforma_acidente" id="ckReforma_acidente" value="Reforma_Acidente = OK"></td>
 
                                         <td><label class="form-label" for="ckreform_melho">Reforma Melhoria</label>   </td>
-                                        <td><input class="form-check-inline" type="checkbox" name="ckreform_melho" id="ckreform_melho" value="reform_melho_OK"></td>
+                                        <td><input class="form-check-inline" type="checkbox" name="ckreform_melho" id="ckreform_melho" value="Reforma_Melhoria = OK"></td>
                                     </div>
                                 </tr>
                             </table>
@@ -84,11 +84,11 @@
                         </div>
                         <div class="col-12">
                             <label class="form-label" for="txtreclama">Descrição do Problema:</label>
-                            <textarea class="form-control" id="txtreclama" name="txtreclama" cols="40" rows="5"></textarea>
+                            <textarea class="form-control" id="txtreclama" name="txtreclama" cols="40" rows="5" required></textarea>
                         </div>
                         <!-- FIM Detalhes Problemas -->
                     </div>
-
+                    <hr>
                     <div class="row">
                         <!-- Tarefa Executada -->
                         <h4 class="card-title">Intervenção/Trabalho Realizado por :</h4>
@@ -97,19 +97,25 @@
                                 <tr>
                                     <div class="mx-4">
                                         <td><label for="ckMeca">Mecânico</label></td>
-                                        <td><input type="checkbox" name="ckMeca" id="ckMeca"></td>
+                                        <td><input type="checkbox" name="ckMeca" id="ckMeca" value="Mecânico = OK"></td>
                                         
-                                        <td><label for="">Eletricista</label></td>
-                                        <td><input type="checkbox" name="" id=""></td>
+                                        <td><label for="ckElet">Eletricista</label></td>
+                                        <td><input type="checkbox" name="ckElet" id="ckElet" value="Eletricista = OK"></td>
                                     </div>
                                 </tr>
                                 <tr>
                                     <div class="ms-2">
-                                        <td><label for="">Soldador</label></td>
-                                        <td><input type="checkbox" name="" id=""></td>
+                                        <td><label for="ckSold">Soldador</label></td>
+                                        <td><input type="checkbox" name="ckSold" id="ckSold" value="Soldador = OK"></td>
 
-                                        <td><label for="">Lubrificador</label></td>
-                                        <td><input type="checkbox" name="" id=""></td>
+                                        <td><label for="ckLubri">Lubrificador</label></td>
+                                        <td><input type="checkbox" name="ckLubri" id="ckLubri" value="Lubrificador = OK"></td>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <div>
+                                        <td><label class="form-label" for="ckLava">Lavador</label></td>
+                                        <td><input class="form-check-inline" type="checkbox" name="ckLava" id="ckLava" value="Lavador = OK"></td>
                                     </div>
                                 </tr>
                             </table>
