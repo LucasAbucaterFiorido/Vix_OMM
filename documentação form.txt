@@ -1,0 +1,27 @@
+Corretiva
+Socorro
+Garantia
+CorretivaProgramada
+Reforma de Acidente
+Reforma Melhoria
+
+
+
+
+
+
+
+.form-check-inline 
+{
+  display: inline-block;
+  margin-right: 1rem; PARA margin-right: 2px; 
+}
+
+
+feat: mobile responsive test
+
+<link id="pagestyle" href="./assets/css/material-dashboard.css?v=3.0.3" rel="stylesheet" />
+
+e91e63
+
+7fca07
