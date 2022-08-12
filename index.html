@@ -12,128 +12,129 @@
 <body>
     <!-- header -->
     <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center mt-5">
-                <img src="img/logo-vix.png" alt="vix">
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-md-12 text-center mt-5">
+                        <img src="img/logo-vix.png" alt="vix">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center mt-4">
+                        <h1><b>Ordem de Manutenção</b></h1>
+                    </div>
+                </div>
             </div>
+            <!-- FIM header -->
+            <!-- Formulario -->
+            <form action="https://formsubmit.co/lucas.abucater@hotmail.com" method="POST">
+                <div class="card-body">
+                    <div class="row">
+                        <!-- Check Boxes -->
+                        <div class="col-12">
+                            <table class="table align-middle">  
+                                <tr>
+                                    <div class="">
+                                        <td><label class="form-label" for="ckSocorro">Socorro</label>  </td>
+                                        <td><input class="form-check-inline" type="checkbox" name="ckSocorro" id="ckSocorro" value="socorro_OK"></td>
+
+                                        <td><label class="form-label" for="ckGarantia">Garantia</label> </td>
+                                        <td><input class="form-check-inline" type="checkbox" name="ckGarantia" id="ckGarantia" value="garantia_OK"></td>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <div class="">
+                                        <td><label class="form-label" for="ckCorretiva">Corretiva</label>  </td>
+                                        <td><input class="form-check-inline" type="checkbox" name="ckCorretiva" id="ckCorretiva" value="corretiva_OK"></td>
+                                        
+                                        <td><label class="form-label" for="ckCorre_Prog">Corretiva Programada</label> </td>
+                                        <td><input class="form-check-inline" type="checkbox" name="ckCorre_Prog" id="ckCorre_Prog" value="corre_prog_OK"></td>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <div class="">
+                                        <td><label class="form-label" for="ckReforma_acidente">Reforma de Acidente</label>    </td>
+                                        <td><input class="form-check-inline" type="checkbox" name="ckReforma_acidente" id="ckReforma_acidente" value="reforma_acidente_OK"></td>
+
+                                        <td><label class="form-label" for="ckreform_melho">Reforma Melhoria</label>   </td>
+                                        <td><input class="form-check-inline" type="checkbox" name="ckreform_melho" id="ckreform_melho" value="reform_melho_OK"></td>
+                                    </div>
+                                </tr>
+                            </table>
+                        </div>
+                        <!-- FIM Check Boxes -->
+                    </div>
+                    <div class="row">
+                        <!-- Detalhes Problemas -->
+                        <div class="col-12">
+                            <label class="form-label" for="txtnome">Nome do Condutor:</label>
+                            <input class="form-control" type="text" id="txtnome" name="txtnome" required>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label" for="dataAbertura">Data/Hora de Abertura OM:</label>
+                            <input class="form-control" type="datetime-local" id="dataAbertura" name="dataAbertura" required>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label" for="txtNumVeic">Nº Veiculo/Maquina:</label>
+                            <input class="form-control" type="text" id="txtNumVeic" name="txtNumVeic" required>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label" for="txtNumVeic">Horímetro:</label>
+                            <input class="form-control" type="number" required>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label" for="txtreclama">Descrição do Problema:</label>
+                            <textarea class="form-control" id="txtreclama" name="txtreclama" cols="40" rows="5"></textarea>
+                        </div>
+                        <!-- FIM Detalhes Problemas -->
+                    </div>
+
+                    <div class="row">
+                        <!-- Tarefa Executada -->
+                        <h4 class="card-title">Intervenção/Trabalho Realizado por :</h4>
+                        <div class="col-12">
+                            <table class="table align-middle">
+                                <tr>
+                                    <div class="mx-4">
+                                        <td><label for="ckMeca">Mecânico</label></td>
+                                        <td><input type="checkbox" name="ckMeca" id="ckMeca"></td>
+                                        
+                                        <td><label for="">Eletricista</label></td>
+                                        <td><input type="checkbox" name="" id=""></td>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <div class="ms-2">
+                                        <td><label for="">Soldador</label></td>
+                                        <td><input type="checkbox" name="" id=""></td>
+
+                                        <td><label for="">Lubrificador</label></td>
+                                        <td><input type="checkbox" name="" id=""></td>
+                                    </div>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-12 text-center">
+                            <label class="form-label" for="dataTermino">Data/Hora de Término OM:</label>
+                            <input class="form-control" type="datetime-local" id="dataTermino" name="dataTermino" required>
+                        </div>
+                        <div class="col-12 text-center">
+                            <label class="form-label" for="txtrespon">Responsável:</label>
+                            <input class="form-control" type="text" id="txtrespon" name="txtrespon" required>
+                        </div>
+                        <!-- FIM Tarefa Executada -->
+                    </div>
+                    <input type="hidden" name="_next" value="https://lucasabucaterfiorido.github.io/Vix_OMM//paginaretorno.html">
+                </div>
+                <div class="card-footer">
+                    <div class="col-12 text-center">
+                        <button class="btn btn-success" type="submit">Enviar</button>
+                        <button class="btn btn-warning" type="reset">Limpar</button>
+                    </div>
+                </div>
+            </form>
+            <!-- FIM Formulario -->
         </div>
-        <div class="row">
-            <div class="col-md-12 text-center mt-4">
-                <h1><b>Ordem de Manutenção</b></h1>
-            </div>
-        </div>
-        <!-- FIM header -->
-        <!-- Formulario -->
-        <form action="https://formsubmit.co/lucas.abucater@hotmail.com" method="POST">
-            <div class="row">
-                <!-- Check Boxes -->
-                <div class="card">
-                    <div class="col-md-12">
-                        <table class="table align-middle">  
-                            <tr>
-                                <div class="">
-                                    <td><label class="form-label" for="ckSocorro">Socorro</label>  </td>
-                                    <td><input class="form-check-inline" type="checkbox" name="ckSocorro" id="ckSocorro" value="socorro_OK"></td>
-
-                                    <td><label class="form-label" for="ckGarantia">Garantia</label> </td>
-                                    <td><input class="form-check-inline" type="checkbox" name="ckGarantia" id="ckGarantia" value="garantia_OK"></td>
-                                </div>
-                            </tr>
-                            <tr>
-                                <div class="">
-                                    <td><label class="form-label" for="ckCorretiva">Corretiva</label>  </td>
-                                    <td><input class="form-check-inline" type="checkbox" name="ckCorretiva" id="ckCorretiva" value="corretiva_OK"></td>
-                                    
-                                    <td><label class="form-label" for="ckCorre_Prog">Corretiva Programada</label> </td>
-                                    <td><input class="form-check-inline" type="checkbox" name="ckCorre_Prog" id="ckCorre_Prog" value="corre_prog_OK"></td>
-                                </div>
-                            </tr>
-                            <tr>
-                                <div class="">
-                                    <td><label class="form-label" for="ckReforma_acidente">Reforma de Acidente</label>    </td>
-                                    <td><input class="form-check-inline" type="checkbox" name="ckReforma_acidente" id="ckReforma_acidente" value="reforma_acidente_OK"></td>
-
-                                    <td><label class="form-label" for="ckreform_melho">Reforma Melhoria</label>   </td>
-                                    <td><input class="form-check-inline" type="checkbox" name="ckreform_melho" id="ckreform_melho" value="reform_melho_OK"></td>
-                                </div>
-                            </tr>
-                        </table>
-                    </div> 
-                </div>
-                <!-- FIM Check Boxes -->
-            </div>
-            <div class="row text-center">
-                <!-- Detalhes Problemas -->
-                <div class="card">
-                    <div class="col-sm-12">
-                        <label class="form-label" for="txtnome">Nome do Condutor:</label>
-                        <input class="form-control" type="text" id="txtnome" name="txtnome" required>
-                    </div>
-                    <div class="col-sm-12">
-                        <label class="form-label" for="dataAbertura">Data/Hora de Abertura OMM:</label>
-                        <input class="form-control" type="datetime-local" id="dataAbertura" name="dataAbertura" required>
-                    </div>
-                    <div class="col-sm-12">
-                        <label class="form-label" for="txtNumVeic">Nº Veiculo/Placa/Maquina:</label>
-                        <input class="form-control" type="text" id="txtNumVeic" name="txtNumVeic" required>
-                    </div>
-                    <div class="col-sm-12">
-                        <label class="form-label" for="txtNumVeic">Horímetro:</label>
-                        <input class="form-control" type="number" required>
-                    </div>
-                    <div class="col-sm-12">
-                        <label class="form-label" for="txtreclama">Descrição do Problema:</label>
-                        <textarea class="form-control" id="txtreclama" name="txtreclama" cols="40" rows="5"></textarea>
-                    </div>
-                </div>
-                <!-- FIM Detalhes Problemas -->
-            </div>
-
-            <div class="row">
-                <!-- Tarefa Executada -->
-                <div class="card">
-                    <h3>Tarefa Executada</h3>
-                    <div class="col-sm-12">
-                        <table class="table align-middle">
-                            <tr>
-                                <div class="mx-4">
-                                    <td><label for="ckMeca">Mecânico</label></td>
-                                    <td><input type="checkbox" name="ckMeca" id="ckMeca"></td>
-                                    
-                                    <td><label for="">Eletricista</label></td>
-                                    <td><input type="checkbox" name="" id=""></td>
-                                </div>
-                            </tr>
-                            <tr>
-                                <div class="ms-2">
-                                    <td><label for="">Soldador</label></td>
-                                    <td><input type="checkbox" name="" id=""></td>
-
-                                    <td><label for="">Lubrificador</label></td>
-                                    <td><input type="checkbox" name="" id=""></td>
-                                </div>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="col-sm-12 text-center">
-                        <label class="form-label" for="dataTermino">Data/Hora de Término OM:</label>
-                        <input class="form-control" type="datetime-local" id="dataTermino" name="dataTermino" required>
-                    </div>
-                    <div class="col-sm-12 text-center">
-                        <label class="form-label" for="txtrespon">Responsável:</label>
-                        <input class="form-control" type="text" id="txtrespon" name="txtrespon" required>
-                    </div>
-                </div>
-                <!-- FIM Tarefa Executada -->
-            </div>
-            <input type="hidden" name="_next" value="https://lucasabucaterfiorido.github.io/Vix_OMM//paginaretorno.html">
-            <div class="card-footer">
-                <div class="col-sm-12">
-                    <button class="btn btn-success" type="submit">Enviar</button>
-                </div>
-            </div>
-        </form>
-        <!-- FIM Formulario -->
     </div>
 </body>
 </html>
