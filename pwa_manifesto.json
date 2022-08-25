@@ -1,0 +1,13 @@
+{
+    "name": "Formulário_OMM",
+    "short_name": "Formulário_OMM",
+    "start_url": "https://lucasabucaterfiorido.github.io/Vix_OMM/",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "DESCRIÇÃO TESTE",
+    "icons": [{
+      "src": "img/logo-vix.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }]
+  }
